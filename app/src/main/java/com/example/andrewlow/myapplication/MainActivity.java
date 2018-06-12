@@ -45,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 list.add("One");
                 list.add("Two");
                 list.add("Three");
-                spin.setAdapter(adapter);
+               // spin.setAdapter(adapter);
                 adapter.notifyDataSetChanged();
+                Toast.makeText(getApplicationContext(),"Data added",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 list.add("Four");
                 list.add("Five");
                 list.add("Six");
-                spin.setAdapter(adapter);
+                //spin.setAdapter(adapter);
                 adapter.notifyDataSetChanged();
             }
         });
